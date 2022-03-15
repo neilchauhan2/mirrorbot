@@ -1,0 +1,17 @@
+.chat-text-container {
+  width: 40%;
+  border-radius: 2.4rem;
+  padding: 1.5rem 2.4rem;
+  margin: 2px 4px;
+  font-size: 16px;
+}
+
+.bot-response-text {
+  background-color: #f2f2f6;
+  color: #080808;
+}
+
+.user-response-text {
+  background-color: #377cf6;
+  color: #fff;
+}
