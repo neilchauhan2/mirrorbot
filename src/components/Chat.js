@@ -44,7 +44,7 @@ const Chat = () => {
                   ></ion-icon>
                 </div>
               )}
-              <ChatText chatResponse={response} />
+              {<ChatText chatResponse={response} />}
             </div>
           );
         })}

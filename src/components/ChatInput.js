@@ -10,10 +10,15 @@ const ChatInput = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (message.length > 0) {
       addUserResponse(message);
+      await sleep(1000);
       addBotResponse(message);
       setMessage("");
     }
