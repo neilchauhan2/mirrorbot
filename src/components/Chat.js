@@ -1,14 +1,20 @@
-import React, { useCallback, useContext } from "react";
+import React, { useCallback, useContext, useEffect } from "react";
 import ChatText from "./ChatText";
 import ChatInput from "./ChatInput";
 import { ChatContext } from "../context/ChatState";
 import "../styles/Chat.css";
 
 const Chat = () => {
-  const { chat } = useContext(ChatContext);
+  const { chat, setInitialState } = useContext(ChatContext);
   const setRef = useCallback((node) => {
     if (node) {
       node.scrollIntoView({ smooth: true });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (localStorage.getItem("chat")) {
+      setInitialState(JSON.parse(localStorage.getItem("chat")));
     }
   }, []);
 

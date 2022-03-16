@@ -1,10 +1,10 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ChatContext } from "../context/ChatState";
 import "../styles/ChatInput.css";
 
 const ChatInput = () => {
   const [message, setMessage] = useState("");
-  const { addBotResponse, addUserResponse } = useContext(ChatContext);
+  const { addBotResponse, addUserResponse, chat } = useContext(ChatContext);
 
   const handleChange = (e) => {
     setMessage(e.target.value);
@@ -16,6 +16,10 @@ const ChatInput = () => {
     addBotResponse(message);
     setMessage("");
   };
+
+  useEffect(() => {
+    localStorage.setItem("chat", JSON.stringify(chat));
+  });
 
   return (
     <div className="chat-input-container">

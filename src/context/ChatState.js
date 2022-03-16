@@ -2,24 +2,7 @@ import { createContext, useReducer } from "react";
 import ChatReducer from "./ChatReducer";
 
 const initialState = {
-  chat: [
-    {
-      message: "Hello, how are you?",
-      isUserResponse: true,
-    },
-    {
-      message: "Hello, how are you?",
-      isUserResponse: false,
-    },
-    {
-      message: "Hello, What is your name?",
-      isUserResponse: true,
-    },
-    {
-      message: "Hello, What is your name?",
-      isUserResponse: false,
-    },
-  ],
+  chat: [],
   isLoading: false,
 };
 
@@ -45,12 +28,20 @@ export const ChatProvider = ({ children }) => {
     });
   };
 
+  const setInitialState = (chat) => {
+    dispatch({
+      type: "SET_INITIAL_STATE",
+      payload: chat,
+    });
+  };
+
   return (
     <ChatContext.Provider
       value={{
         chat: state.chat,
         addBotResponse,
         addUserResponse,
+        setInitialState,
       }}
     >
       {children}

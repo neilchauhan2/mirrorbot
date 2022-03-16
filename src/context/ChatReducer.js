@@ -24,6 +24,12 @@ export default (state, action) => {
         ],
       };
 
+    case "SET_INITIAL_STATE":
+      return {
+        ...state,
+        chat: action.payload,
+      };
+
     default:
       return state;
   }
