@@ -1,0 +1,14 @@
+.chat-input-field {
+  width: 40%;
+  margin: 1rem;
+}
+
+.submit-btn {
+  width: 6rem;
+  height: 2rem;
+  background-color: #377cf6;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}

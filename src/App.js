@@ -1,13 +1,15 @@
+import { useEffect, useState } from "react";
 import "./App.css";
-import ChatText from "./components/ChatText";
+import Chat from "./components/Chat";
+import { ChatProvider } from "./context/ChatState";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <ChatProvider>
       <h1>Chat App</h1>
-      <ChatText />
-    </div>
+      <Chat />
+    </ChatProvider>
   );
-}
+};
 
 export default App;

@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
+import { ChatContext } from "../context/ChatState";
 import "../styles/ChatText.css";
 
-const ChatText = () => {
+const ChatText = ({ chatResponse }) => {
   return (
-    <div className="chat-text-container user-response-text">
-      <p className="chat-text-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nam quam
-        sed alias ea sapiente sit maxime quaerat magni mollitia, voluptatibus
-        rerum nesciunt officia delectus molestiae perspiciatis ipsam id minus?
-      </p>
+    <div
+      className={`chat-text-container ${
+        chatResponse.isUserResponse ? "user-response-text" : "bot-response-text"
+      }`}
+    >
+      <p className="chat-text-body">{chatResponse.message}</p>
     </div>
   );
 };
