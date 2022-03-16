@@ -3,7 +3,7 @@
   max-width: 30%;
   border-radius: 2.4rem;
   padding: 1.5rem 2.4rem;
-  margin: 1rem;
+  margin: 0.5rem;
   font-size: 16px;
 }
 
@@ -17,4 +17,25 @@
   background-color: #377cf6;
   color: #fff;
   flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 900px) {
+  .chat-text-container {
+    padding: 1.2rem 1.8rem;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat-text-container {
+    padding: 1rem 1.3rem;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chat-text-container {
+    padding: 0.8rem 1.2rem;
+    font-size: 12px;
+  }
 }

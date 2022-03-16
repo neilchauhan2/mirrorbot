@@ -29,3 +29,27 @@
 .user-icon {
   color: #377cf6;
 }
+
+@media screen and (max-width: 900px) {
+  .chat-icon {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat-container {
+    height: 72vh;
+  }
+  .chat-icon {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chat-container {
+    height: 70vh;
+  }
+  .chat-icon {
+    font-size: 24px;
+  }
+}

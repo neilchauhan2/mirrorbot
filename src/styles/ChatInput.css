@@ -31,3 +31,47 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
   font-size: 22px;
 }
+
+@media screen and (max-width: 900px) {
+  .chat-input-form {
+    margin-bottom: 0.5rem;
+  }
+  .chat-input-field {
+    font-size: 14px;
+  }
+  .submit-btn {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat-input-form {
+    margin-bottom: 0;
+  }
+  .chat-input-field {
+    font-size: 14px;
+    height: 3rem;
+    width: 85%;
+  }
+  .submit-btn {
+    font-size: 20px;
+    height: 3rem;
+    width: 15%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chat-input-form {
+    margin-bottom: 0;
+  }
+  .chat-input-field {
+    font-size: 12px;
+    height: 3rem;
+    width: 80%;
+  }
+  .submit-btn {
+    font-size: 18px;
+    height: 3rem;
+    width: 20%;
+  }
+}
