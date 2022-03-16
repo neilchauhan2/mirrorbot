@@ -21,7 +21,6 @@ export const ChatProvider = ({ children }) => {
   };
 
   const addBotResponse = (message) => {
-    setTimeout(() => {}, 2000);
     dispatch({
       type: "ADD_BOT_RESPONSE",
       payload: message,

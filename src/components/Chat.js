@@ -19,34 +19,36 @@ const Chat = () => {
   }, []);
 
   return (
-    <div className="chat-container">
-      {chat.map((response, index) => {
-        const lastResponse = chat.length - 1;
-        return (
-          <div
-            ref={lastResponse ? setRef : null}
-            key={index}
-            className="chat-response-container"
-            style={{
-              flexFlow: response.isUserResponse ? "row-reverse" : "row",
-            }}
-          >
-            {!response.isUserResponse ? (
-              <div className="chat-icon bot-icon">
-                <ion-icon name="flash"></ion-icon>
-              </div>
-            ) : (
-              <div className="chat-icon user-icon">
-                <ion-icon
-                  name="person-circle"
-                  className="chat-icon user-icon"
-                ></ion-icon>
-              </div>
-            )}
-            <ChatText chatResponse={response} />
-          </div>
-        );
-      })}
+    <div className="chat">
+      <div className="chat-container">
+        {chat.map((response, index) => {
+          const lastResponse = chat.length - 1;
+          return (
+            <div
+              ref={lastResponse ? setRef : null}
+              key={index}
+              className="chat-response-container"
+              style={{
+                flexFlow: response.isUserResponse ? "row-reverse" : "row",
+              }}
+            >
+              {!response.isUserResponse ? (
+                <div className="chat-icon bot-icon">
+                  <ion-icon name="flash"></ion-icon>
+                </div>
+              ) : (
+                <div className="chat-icon user-icon">
+                  <ion-icon
+                    name="person-circle"
+                    className="chat-icon user-icon"
+                  ></ion-icon>
+                </div>
+              )}
+              <ChatText chatResponse={response} />
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

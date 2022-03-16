@@ -1,15 +1,18 @@
 .chat-input-container {
-  margin-left: 20%;
-  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 0.8rem;
 }
 
 .chat-input-form {
   display: flex;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  width: 56%;
 }
 
 .chat-input-field {
-  width: 66%;
+  width: 87%;
   margin-left: 1rem;
   height: 3rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
@@ -21,7 +24,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5rem;
+  width: 5.4%;
   height: 3rem;
   background-color: #377cf6;
   border: none;

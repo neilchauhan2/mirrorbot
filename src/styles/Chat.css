@@ -1,5 +1,9 @@
+.chat {
+  display: flex;
+  justify-content: center;
+}
 .chat-container {
-  width: 800px;
+  width: 50%;
   height: 72vh;
   background-color: #fff;
   margin: auto;
