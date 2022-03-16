@@ -32,6 +32,7 @@ const ChatInput = () => {
           className="chat-input-field"
           value={message}
           onChange={handleChange}
+          placeholder="Type your message here..."
         />
         <button className="submit-btn" type="submit">
           <ion-icon name="send"></ion-icon>

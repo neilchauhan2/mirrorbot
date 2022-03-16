@@ -8,8 +8,10 @@ const App = () => {
   return (
     <ChatProvider>
       <Header />
-      <Chat />
-      <ChatInput />
+      <div className="container">
+        <Chat />
+        <ChatInput />
+      </div>
     </ChatProvider>
   );
 };
