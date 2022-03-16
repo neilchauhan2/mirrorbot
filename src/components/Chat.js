@@ -1,6 +1,5 @@
 import React, { useCallback, useContext, useEffect } from "react";
 import ChatText from "./ChatText";
-import ChatInput from "./ChatInput";
 import { ChatContext } from "../context/ChatState";
 import "../styles/Chat.css";
 
@@ -16,6 +15,7 @@ const Chat = () => {
     if (localStorage.getItem("chat")) {
       setInitialState(JSON.parse(localStorage.getItem("chat")));
     }
+    // eslint-disable-next-line
   }, []);
 
   return (

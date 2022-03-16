@@ -1,4 +1,4 @@
-export default (state, action) => {
+const ChatReducer = (state, action) => {
   switch (action.type) {
     case "ADD_USER_RESPONSE":
       return {
@@ -34,3 +34,5 @@ export default (state, action) => {
       return state;
   }
 };
+
+export default ChatReducer;
