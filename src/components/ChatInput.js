@@ -12,9 +12,11 @@ const ChatInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addUserResponse(message);
-    addBotResponse(message);
-    setMessage("");
+    if (message.length > 0) {
+      addUserResponse(message);
+      addBotResponse(message);
+      setMessage("");
+    }
   };
 
   useEffect(() => {

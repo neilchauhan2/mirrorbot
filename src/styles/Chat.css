@@ -5,8 +5,23 @@
   margin: auto;
   padding: 2rem 1rem;
   overflow: auto;
+  margin-top: 0.5rem;
+  scroll-behavior: smooth;
 }
 
 .chat-response-container {
   display: flex;
+  align-items: center;
+}
+
+.chat-icon {
+  font-size: 35px;
+}
+
+.bot-icon {
+  color: #f7dc6f;
+}
+
+.user-icon {
+  color: #377cf6;
 }
