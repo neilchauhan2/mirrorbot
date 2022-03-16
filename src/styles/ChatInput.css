@@ -1,14 +1,21 @@
+.chat-input-container {
+  margin-left: 20%;
+}
+
 .chat-input-field {
-  width: 40%;
-  margin: 1rem;
+  width: 735px;
+  margin-left: 1rem;
+  height: 2rem;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
+  border: none;
 }
 
 .submit-btn {
   width: 6rem;
-  height: 2rem;
+  height: 2.1rem;
   background-color: #377cf6;
   border: none;
-  border-radius: 5px;
   color: #fff;
   font-weight: 600;
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.2);
 }

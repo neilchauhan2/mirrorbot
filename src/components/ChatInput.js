@@ -14,6 +14,7 @@ const ChatInput = () => {
     e.preventDefault();
     addUserResponse(message);
     addBotResponse(message);
+    setMessage("");
   };
 
   return (

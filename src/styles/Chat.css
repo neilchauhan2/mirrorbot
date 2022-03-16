@@ -1,0 +1,12 @@
+.chat-container {
+  width: 800px;
+  height: 72vh;
+  background-color: #fff;
+  margin: auto;
+  padding: 2rem 1rem;
+  overflow: auto;
+}
+
+.chat-response-container {
+  display: flex;
+}
