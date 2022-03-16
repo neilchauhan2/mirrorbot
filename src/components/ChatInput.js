@@ -28,7 +28,7 @@ const ChatInput = () => {
           onChange={handleChange}
         />
         <button className="submit-btn" type="submit">
-          Submit
+          <ion-icon name="send"></ion-icon>
         </button>
       </form>
     </div>
